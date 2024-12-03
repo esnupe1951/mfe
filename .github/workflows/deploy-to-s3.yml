@@ -1,6 +1,9 @@
-name: GitHub Actions Demo
+name: Deploy Container to S3
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches:
+      - master
 defaults:
   run:
     working-directory: packages/container
